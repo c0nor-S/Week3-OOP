@@ -16,6 +16,7 @@ public class Calculator {
             case "add": add(a, b); break;
             case "subtract": subtract(a, b); break;
             case "multiply": multiply(a, b); break;
+            case "divide": divide(a, b); break;
             default: System.out.println("Invalid Operation"); break;
 
 
@@ -38,6 +39,13 @@ public class Calculator {
     {
         int sum = a * b;
         System.out.println("The Product Is: " + sum);
+
+    }
+
+    public static void divide(int a, int b)
+    {
+        int sum = a / b;
+        System.out.println("The Result Is: " + sum);
 
     }
 }
