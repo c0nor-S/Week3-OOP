@@ -14,7 +14,10 @@ public class Calculator {
         String op = sc.next();
         switch (op) {
             case "add": add(a, b); break;
+            case "subtract": subtract(a, b); break;
             default: System.out.println("Invalid Operation"); break;
+
+
         }
 
     }
@@ -22,5 +25,11 @@ public class Calculator {
     {
         int sum = a + b;
         System.out.println("The Sum Is: " + sum);
+    }
+
+    public static void subtract(int a, int b)
+    {
+        int sum = a - b;
+        System.out.println("The Result Is: " + sum);
     }
 }
